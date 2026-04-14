@@ -213,7 +213,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		let sliderPos = e.target.value,
 			parent = $(this).closest('.before_after')
 
-		parent.find('.img.before').css('width', `${sliderPos}%`)
+		// clip-path обрезает картинку справа
+		parent.find('.img.before img').css('clip-path', `inset(0 ${100 - sliderPos}% 0 0)`)
 
 		parent.find('.circle').css('left', `${sliderPos}%`)
 		parent.find('.line').css('left', `${sliderPos}%`)
