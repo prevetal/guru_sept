@@ -28,15 +28,9 @@
     /*---------------
         Accordion
     ---------------*/
-    .accordion_item
+    .accordion_item .head .icon
     {
-        .head
-        {
-            .icon
-            {
-                width: 40px;
-            }
-        }
+        width: 40px;
     }
 
 
@@ -44,15 +38,9 @@
     /*------------
         Header
     ------------*/
-    header
+    header .logo span
     {
-        .logo
-        {
-            span
-            {
-                display: none;
-            }
-        }
+        display: none;
     }
 
 
@@ -63,40 +51,40 @@
     .block_head
     {
         gap: var(--inner_gap_s);
+    }
 
 
-        &.row
-        {
-            gap: var(--inner_gap_s);
+    .block_head.row
+    {
+        gap: var(--inner_gap_s);
+    }
 
 
-            .col
-            {
-                width: 100%;
-                max-width: 100%;
+    .block_head.row .col
+    {
+        width: 100%;
+        max-width: 100%;
 
-                gap: var(--inner_gap_s);
-            }
-
-
-            .title
-            {
-                width: 100%;
-                max-width: 100%;
-            }
+        gap: var(--inner_gap_s);
+    }
 
 
-            .desc
-            {
-                width: 100%;
+    .block_head.row .title
+    {
+        width: 100%;
+        max-width: 100%;
+    }
 
 
-                &.l_w
-                {
-                    width: 100%;
-                }
-            }
-        }
+    .block_head.row .desc
+    {
+        width: 100%;
+    }
+
+
+    .block_head.row .desc.l_w
+    {
+        width: 100%;
     }
 
 
@@ -107,71 +95,68 @@
     .first_section
     {
         padding-top: var(--block_padding_xl);
+    }
 
 
-        .cont
-        {
-            gap: var(--block_padding_xl);
-        }
+    .first_section .cont
+    {
+        gap: var(--block_padding_xl);
+    }
 
 
-        .data
-        {
-            width: 100%;
+    .first_section .data
+    {
+        width: 100%;
+    }
 
 
-            .title
-            {
-                margin-bottom: var(--block_padding);
-            }
+    .first_section .data .title
+    {
+        margin-bottom: var(--block_padding);
+    }
 
 
-            .btns
-            {
-                .btn
-                {
-                    height: 36px;
-                }
-            }
-        }
+    .first_section .data .btns .btn
+    {
+        height: 36px;
+    }
 
 
-        .person
-        {
-            align-content: flex-start;
-            align-items: flex-start;
+    .first_section .person
+    {
+        align-content: flex-start;
+        align-items: flex-start;
 
-            width: 100%;
-            padding-block: var(--block_padding_l);
-            padding-inline: var(--block_padding_l);
-
-
-            .items
-            {
-                display: none;
-            }
+        width: 100%;
+        padding-block: var(--block_padding_l);
+        padding-inline: var(--block_padding_l);
+    }
 
 
-            .info
-            {
-                width: 100%;
-                margin-right: 0;
-            }
+    .first_section .person .items
+    {
+        display: none;
+    }
 
 
-            .photo
-            {
-                right: calc(var(--inner_gap_s) * -1);
-
-                height: 280px;
-            }
-        }
+    .first_section .person .info
+    {
+        width: 100%;
+        margin-right: 0;
+    }
 
 
-        .mob_person_items
-        {
-            display: block;
-        }
+    .first_section .person .photo
+    {
+        right: calc(var(--inner_gap_s) * -1);
+
+        height: 280px;
+    }
+
+
+    .first_section .mob_person_items
+    {
+        display: block;
     }
 
 
@@ -179,90 +164,81 @@
     /*----------
         Calc
     ----------*/
-    .calc
+    .calc .cont
     {
-        .cont
-        {
-            min-height: 760px;
-        }
+        min-height: 760px;
+    }
 
 
-        .data
-        {
-            padding-block: var(--block_padding_l);
-            padding-inline: var(--block_padding_l);
+    .calc .data
+    {
+        padding-block: var(--block_padding_l);
+        padding-inline: var(--block_padding_l);
+    }
 
 
-            .info
-            {
-                width: 330px;
-                max-width: 100%;
+    .calc .data .info
+    {
+        width: 330px;
+        max-width: 100%;
 
-                gap: var(--inner_gap_xl);
-
-
-                .line
-                {
-                    gap: var(--inner_gap_xs);
-                }
+        gap: var(--inner_gap_xl);
+    }
 
 
-                .vals
-                {
-                    label
-                    {
-                        span
-                        {
-                            padding-inline: var(--inner_gap_s);
-                        }
-                    }
-                }
-            }
+    .calc .data .info .line
+    {
+        gap: var(--inner_gap_xs);
+    }
 
 
-            .result
-            {
-                top: -44px;
-
-                width: 330px;
-                height: 674px;
-                padding-block: 96px;
-                padding-inline: 36px;
-
-                transform: none;
-
-                background: url(../images/bg_calc_result_mob.png) 0 0/ 100% 100% no-repeat;
-
-                gap: var(--inner_gap_s);
+    .calc .data .info .vals label span
+    {
+        padding-inline: var(--inner_gap_s);
+    }
 
 
-                .logo
-                {
-                    display: block;
-                }
+    .calc .data .result
+    {
+        top: -44px;
+
+        width: 330px;
+        height: 674px;
+        padding-block: 96px;
+        padding-inline: 36px;
+
+        transform: none;
+
+        background: url(../images/bg_calc_result_mob.png) 0 0/100% 100% no-repeat;
+
+        gap: var(--inner_gap_s);
+    }
 
 
-                .prices
-                {
-                    flex-direction: column;
-
-                    gap: var(--inner_gap_s);
-
-
-                    > *
-                    {
-                        gap: var(--inner_gap_xxxs);
-                    }
-                }
+    .calc .data .result .logo
+    {
+        display: block;
+    }
 
 
-                .btn
-                {
-                    height: 36px;
-                    margin-top: var(--inner_gap_xxs);
-                }
-            }
-        }
+    .calc .data .result .prices
+    {
+        flex-direction: column;
+
+        gap: var(--inner_gap_s);
+    }
+
+
+    .calc .data .result .prices > *
+    {
+        gap: var(--inner_gap_xxxs);
+    }
+
+
+    .calc .data .result .btn
+    {
+        height: 36px;
+        margin-top: var(--inner_gap_xxs);
     }
 
 
@@ -270,27 +246,24 @@
     /*-------------
         History
     -------------*/
-    .history
+    .history .chart
     {
-        .chart
-        {
-            width: 100%;
-            height: 300px;
-        }
+        width: 100%;
+        height: 300px;
+    }
 
 
-        .info
-        {
-            width: 100%;
+    .history .info
+    {
+        width: 100%;
 
-            gap: var(--inner_gap);
+        gap: var(--inner_gap);
+    }
 
 
-            .service
-            {
-                padding: var(--inner_gap_s);
-            }
-        }
+    .history .info .service
+    {
+        padding: var(--inner_gap_s);
     }
 
 
@@ -298,41 +271,35 @@
     /*----------------
         Situations
     ----------------*/
-    .situations
+    .situations .grid_row
     {
-        .grid_row
-        {
-            --gap_x: var(--inner_gap);
-            --gap_y: var(--inner_gap);
-            --items_per_line: 1;
-        }
+        --gap_x: var(--inner_gap);
+        --gap_y: var(--inner_gap);
+        --items_per_line: 1;
+    }
 
 
-        .col
-        {
-            gap: var(--inner_gap);
-        }
+    .situations .col
+    {
+        gap: var(--inner_gap);
+    }
 
 
-        .item
-        {
-            .image
-            {
-                width: 300px;
-            }
+    .situations .item .image
+    {
+        width: 300px;
+    }
 
 
-            .info
-            {
-                width: calc(100% - 300px - var(--inner_gap));
-            }
+    .situations .item .info
+    {
+        width: calc(100% - 300px - var(--inner_gap));
+    }
 
 
-            .btn
-            {
-                height: 36px;
-            }
-        }
+    .situations .item .btn
+    {
+        height: 36px;
     }
 
 
@@ -340,40 +307,37 @@
     /*-----------
         Steps
     -----------*/
-    .steps
+    .steps .message
     {
-        .message
-        {
-            width: 100%;
-        }
+        width: 100%;
+    }
 
 
-        .grid_row
-        {
-            --items_per_line: 1;
-            --gap_x: var(--zero_px);
-            --gap_y: 40px;
-        }
+    .steps .grid_row
+    {
+        --items_per_line: 1;
+        --gap_x: var(--zero_px);
+        --gap_y: 40px;
+    }
 
 
-        .item
-        {
-            min-height: 294px;
-            padding: var(--inner_gap_l);
+    .steps .item
+    {
+        min-height: 294px;
+        padding: var(--inner_gap_l);
+    }
 
 
-            .arrow
-            {
-                top: -2px;
-                right: 0;
-                bottom: auto;
-                left: 0;
+    .steps .item .arrow
+    {
+        top: -2px;
+        right: 0;
+        bottom: auto;
+        left: 0;
 
-                margin-inline: auto;
+        margin-inline: auto;
 
-                transform: rotate(90deg) translatex(-100%);
-            }
-        }
+        transform: rotate(90deg) translatex(-100%);
     }
 
 
@@ -381,53 +345,50 @@
     /*---------------------
         After departure
     ---------------------*/
-    .after_departure
+    .after_departure .cont
     {
-        .cont
-        {
-            gap: 0;
-        }
+        gap: 0;
+    }
 
 
-        .block_head
-        {
-            width: 100%;
-            margin-bottom: var(--block_head_offset);
+    .after_departure .block_head
+    {
+        width: 100%;
+        margin-bottom: var(--block_head_offset);
 
-            gap: var(--inner_gap_s);
-        }
-
-
-        .data
-        {
-            width: 100%;
-        }
+        gap: var(--inner_gap_s);
+    }
 
 
-        .grid_row
-        {
-            --items_per_line: 1;
-            --gap_x: var(--inner_gap_s);
-            --gap_y: var(--inner_gap_s);
-        }
+    .after_departure .data
+    {
+        width: 100%;
+    }
 
 
-        .item
-        {
-            min-height: 127px;
+    .after_departure .grid_row
+    {
+        --items_per_line: 1;
+        --gap_x: var(--inner_gap_s);
+        --gap_y: var(--inner_gap_s);
+    }
 
 
-            .thumb
-            {
-                top: auto;
-                right: var(--inner_gap_xs);
-                bottom: 0;
-                left: auto;
+    .after_departure .item
+    {
+        min-height: 127px;
+    }
 
-                width: auto;
-                height: 160%;
-            }
-        }
+
+    .after_departure .item .thumb
+    {
+        top: auto;
+        right: var(--inner_gap_xs);
+        bottom: 0;
+        left: auto;
+
+        width: auto;
+        height: 160%;
     }
 
 
@@ -435,58 +396,51 @@
     /*-----------------------
         Try simpler first
     -----------------------*/
-    .try_simpler_first
+    .try_simpler_first .list
     {
-        .list
-        {
-            width: 100%;
+        width: 100%;
+    }
 
 
-            .item
-            {
-                .name,
-                .desc
-                {
-                    width: 100%;
-                }
-            }
-        }
+    .try_simpler_first .list .item .name,
+    .try_simpler_first .list .item .desc
+    {
+        width: 100%;
+    }
 
 
+    .try_simpler_first .action
+    {
+        overflow: visible;
 
-        .action
-        {
-            overflow: visible;
-
-            width: 100%;
-            min-height: 238px;
-            padding: var(--inner_gap_l);
-
-
-            .title
-            {
-                width: 422px;
-                max-width: 100%;
-            }
+        width: 100%;
+        min-height: 238px;
+        padding: var(--inner_gap_l);
+    }
 
 
-            .desc
-            {
-                width: 224px;
-            }
+    .try_simpler_first .action .title
+    {
+        width: 422px;
+        max-width: 100%;
+    }
 
 
-            .btn
-            {
-                height: 36px;
-            }
+    .try_simpler_first .action .desc
+    {
+        width: 224px;
+    }
 
 
-            .photo
-            {
-                width: 305px;
-            }
-        }
+    .try_simpler_first .action .btn
+    {
+        height: 36px;
+    }
+
+
+    .try_simpler_first .action .photo
+    {
+        width: 305px;
     }
 
 
@@ -494,53 +448,38 @@
     /*------------------
         Before/After
     ------------------*/
-    .before_after
+    .before_after .images
     {
-        .images
-        {
-            height: 330px;
-        }
+        height: 330px;
+    }
 
 
-        .grid_row
-        {
-            --items_per_line: 1;
-        }
+    .before_after .grid_row
+    {
+        --items_per_line: 1;
+    }
 
 
-        .item
-        {
-            .items
-            {
-                > *
-                {
-                    padding-block: 6px;
-                    padding-inline: var(--inner_gap_xs);
-                }
-            }
-        }
+    .before_after .item .items > *
+    {
+        padding-block: 6px;
+        padding-inline: var(--inner_gap_xs);
     }
 
 
 
     /*--------------
-        Rreviews
+        Reviews
     --------------*/
-    .reviews
+    .reviews .row .main
     {
-        .row
-        {
-            .main
-            {
-                width: 100%;
-            }
+        width: 100%;
+    }
 
 
-            .list
-            {
-                width: 100%;
-            }
-        }
+    .reviews .row .list
+    {
+        width: 100%;
     }
 
 
@@ -548,27 +487,21 @@
     /*-------------
         What if
     -------------*/
-    .what_if
+    .what_if .images
     {
-        .images
-        {
-            display: none;
-        }
+        display: none;
+    }
 
 
-        .accordion
-        {
-            width: 100%;
+    .what_if .accordion
+    {
+        width: 100%;
+    }
 
 
-            .accordion_item
-            {
-                .image
-                {
-                    display: block;
-                }
-            }
-        }
+    .what_if .accordion .accordion_item .image
+    {
+        display: block;
     }
 
 
@@ -576,56 +509,51 @@
     /*------------------
         Action block
     ------------------*/
-    .action_block
+    .action_block .tab_content
     {
-        .tab_content
-        {
-            gap: var(--inner_gap_xl);
-        }
+        gap: var(--inner_gap_xl);
+    }
 
 
-        .message
-        {
-            width: 100%;
-        }
+    .action_block .message
+    {
+        width: 100%;
+    }
 
 
-        .data
-        {
-            width: 100%;
+    .action_block .data
+    {
+        width: 100%;
+    }
 
 
-            .form
-            {
-                --form_input_height: 36px;
-
-                .line
-                {
-                    width: calc((100% - 180px - var(--inner_gap_s) * 2) / 2);
-                }
+    .action_block .data .form
+    {
+        --form_input_height: 36px;
+    }
 
 
-                .submit
-                {
-                    width: 180px;
-                }
-            }
-        }
+    .action_block .data .form .line
+    {
+        width: calc((100% - 180px - var(--inner_gap_s) * 2) / 2);
+    }
 
 
-        .no
-        {
-            .btn
-            {
-                height: 36px;
-            }
-        }
+    .action_block .data .form .submit
+    {
+        width: 180px;
+    }
 
 
-        .image
-        {
-            display: none;
-        }
+    .action_block .no .btn
+    {
+        height: 36px;
+    }
+
+
+    .action_block .image
+    {
+        display: none;
     }
 
 
@@ -647,18 +575,18 @@
         border-radius: 0;
 
         gap: var(--inner_gap);
+    }
 
 
-        .info
-        {
-            gap: var(--inner_gap_xs);
-        }
+    .cookies .info
+    {
+        gap: var(--inner_gap_xs);
+    }
 
 
-        .btn
-        {
-            height: 36px;
-        }
+    .cookies .btn
+    {
+        height: 36px;
     }
 
 
@@ -669,67 +597,67 @@
     footer
     {
         position: relative;
+    }
 
 
-        .cont
-        {
-            position: relative;
+    footer .cont
+    {
+        position: relative;
 
-            padding-right: calc(260px + var(--cont_padding));
+        padding-right: calc(260px + var(--cont_padding));
 
-            z-index: 3;
-        }
-
-
-        .logo
-        {
-            align-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-
-            width: 100%;
-            margin-bottom: var(--inner_gap_s);
-
-            gap: var(--inner_gap);
+        z-index: 3;
+    }
 
 
-            img
-            {
-                width: 186px;
-                height: 75px;
-            }
+    footer .logo
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        width: 100%;
+        margin-bottom: var(--inner_gap_s);
+
+        gap: var(--inner_gap);
+    }
 
 
-            br
-            {
-                display: none;
-            }
-        }
+    footer .logo img
+    {
+        width: 186px;
+        height: 75px;
+    }
 
 
-        .callback_btn
-        {
-            height: 36px;
-        }
+    footer .logo br
+    {
+        display: none;
+    }
 
 
-        .phone
-        {
-            margin-right: auto;
-        }
+    footer .callback_btn
+    {
+        height: 36px;
+    }
 
 
-        .text
-        {
-            width: 100%;
-            margin-bottom: var(--inner_gap_l);
-        }
+    footer .phone
+    {
+        margin-right: auto;
+    }
 
 
-        .img
-        {
-            display: block;
-        }
+    footer .text
+    {
+        width: 100%;
+        margin-bottom: var(--inner_gap_l);
+    }
+
+
+    footer .img
+    {
+        display: block;
     }
 
 
@@ -737,31 +665,25 @@
     /*-----------
         PopUp
     -----------*/
-    #calc_modal
+    #calc_modal .modal_desc
     {
-        .modal_desc
-        {
-            width: 304px;
-        }
+        width: 304px;
+    }
 
 
-        .calc
-        {
-            .data
-            {
-                min-height: 476px;
+    #calc_modal .calc .data
+    {
+        min-height: 476px;
+    }
 
 
-                .result
-                {
-                    top: auto;
-                    bottom: 0;
+    #calc_modal .calc .data .result
+    {
+        top: auto;
+        bottom: 0;
 
-                    width: 300px;
-                    height: 560px;
-                    padding-block: 48px;
-                }
-            }
-        }
+        width: 300px;
+        height: 560px;
+        padding-block: 48px;
     }
 }

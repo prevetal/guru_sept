@@ -3,12 +3,9 @@
     /*---------------
         Accordion
     ---------------*/
-    .accordion_item
+    .accordion_item .head
     {
-        .head
-        {
-            padding: var(--inner_gap_s);
-        }
+        padding: var(--inner_gap_s);
     }
 
 
@@ -16,13 +13,10 @@
     /*----------
         Tabs
     ----------*/
-    .tabs
+    .tabs .btn
     {
-        .btn
-        {
-            width: calc(50% - 9px);
-            height: 32px;
-        }
+        width: calc(50% - 9px);
+        height: 32px;
     }
 
 
@@ -30,12 +24,9 @@
     /*------------
         Header
     ------------*/
-    header
+    header .phone
     {
-        .phone
-        {
-            display: none;
-        }
+        display: none;
     }
 
 
@@ -43,15 +34,9 @@
     /*----------------
         Block head
     ----------------*/
-    .block_head
+    .block_head .title br
     {
-        .title
-        {
-            br
-            {
-                display: none;
-            }
-        }
+        display: none;
     }
 
 
@@ -59,52 +44,43 @@
     /*-------------------
         First section
     -------------------*/
-    .first_section
+    .first_section .data .btns
     {
-        .data
-        {
-            .btns
-            {
-                flex-direction: column;
-            }
-        }
+        flex-direction: column;
+    }
 
 
-        .person
-        {
-            padding-block: var(--inner_gap_s);
-            padding-inline: var(--inner_gap_s);
+    .first_section .person
+    {
+        padding-block: var(--inner_gap_s);
+        padding-inline: var(--inner_gap_s);
+    }
 
 
-            .info
-            {
-                width: 167px;
-            }
+    .first_section .person .info
+    {
+        width: 167px;
+    }
 
 
-            .photo
-            {
-                right: calc(var(--inner_gap_xs) * -1);
+    .first_section .person .photo
+    {
+        right: calc(var(--inner_gap_xs) * -1);
 
-                height: 192px;
-            }
-        }
-
-
-        .mob_person_items
-        {
-            .grid_row
-            {
-                --items_per_line: 1;
-            }
+        height: 192px;
+    }
 
 
-            .item
-            {
-                min-height: 122px;
-                padding: var(--inner_gap_s);
-            }
-        }
+    .first_section .mob_person_items .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+    .first_section .mob_person_items .item
+    {
+        min-height: 122px;
+        padding: var(--inner_gap_s);
     }
 
 
@@ -112,42 +88,39 @@
     /*----------
         Calc
     ----------*/
-    .calc
+    .calc .cont
     {
-        .cont
-        {
-            min-height: 1260px;
-        }
+        min-height: 1260px;
+    }
 
 
-        .data
-        {
-            padding-block: var(--inner_gap_l) 112px;
-            padding-inline: var(--inner_gap_s);
+    .calc .data
+    {
+        padding-block: var(--inner_gap_l) 112px;
+        padding-inline: var(--inner_gap_s);
+    }
 
 
-            .info
-            {
-                width: 100%;
+    .calc .data .info
+    {
+        width: 100%;
 
-                gap: var(--inner_gap_l);
-            }
+        gap: var(--inner_gap_l);
+    }
 
 
-            .result
-            {
-                top: 100%;
-                right: 0;
-                left: 0;
+    .calc .data .result
+    {
+        top: 100%;
+        right: 0;
+        left: 0;
 
-                width: 300px;
-                height: 576px;
-                margin-inline: auto;
-                margin-top: -88px;
-                padding-block: 80px 48px;
-                padding-inline: 32px;
-            }
-        }
+        width: 300px;
+        height: 576px;
+        margin-inline: auto;
+        margin-top: -88px;
+        padding-block: 80px 48px;
+        padding-inline: 32px;
     }
 
 
@@ -155,31 +128,25 @@
     /*----------------
         Situations
     ----------------*/
-    .situations
+    .situations .item .image,
+    .situations .item .info
     {
-        .item
-        {
-            .image,
-            .info
-            {
-                width: 100%;
-            }
+        width: 100%;
+    }
 
 
-            .bottom
-            {
-                align-content: flex-start;
-                align-items: flex-start;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
+    .situations .item .bottom
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
 
-            .btn
-            {
-                width: 100%;
-            }
-        }
+    .situations .item .btn
+    {
+        width: 100%;
     }
 
 
@@ -187,12 +154,9 @@
     /*-----------
         Steps
     -----------*/
-    .steps
+    .steps .item
     {
-        .item
-        {
-            padding: var(--inner_gap);
-        }
+        padding: var(--inner_gap);
     }
 
 
@@ -200,20 +164,17 @@
     /*---------------------
         After departure
     ---------------------*/
-    .after_departure
+    .after_departure .item
     {
-        .item
-        {
-            min-height: 204px;
+        min-height: 204px;
+    }
 
 
-            .thumb
-            {
-                right: 0;
+    .after_departure .item .thumb
+    {
+        right: 0;
 
-                height: 120%;
-            }
-        }
+        height: 120%;
     }
 
 
@@ -221,27 +182,24 @@
     /*-----------------------
         Try simpler first
     -----------------------*/
-    .try_simpler_first
+    .try_simpler_first .action
     {
-        .action
-        {
-            overflow: hidden;
+        overflow: hidden;
 
-            min-height: 320px;
-            padding: var(--inner_gap);
-
-
-            .desc
-            {
-                width: 197px;
-            }
+        min-height: 320px;
+        padding: var(--inner_gap);
+    }
 
 
-            .photo
-            {
-                width: 182px;
-            }
-        }
+    .try_simpler_first .action .desc
+    {
+        width: 197px;
+    }
+
+
+    .try_simpler_first .action .photo
+    {
+        width: 182px;
     }
 
 
@@ -249,53 +207,35 @@
     /*------------------
         Before/After
     ------------------*/
-    .before_after
+    .before_after .images
     {
-        .images
-        {
-            height: 240px;
-        }
+        height: 240px;
     }
 
 
 
     /*--------------
-        Rreviews
+        Reviews
     --------------*/
-    .reviews
+    .reviews .row .review .data
     {
-        .row
-        {
-            .review
-            {
-                .data
-                {
-                    width: 100%;
-                }
+        width: 100%;
+    }
 
 
-                .thumb
-                {
-                    width: 100%;
-                    height: 115px;
-                }
-            }
+    .reviews .row .review .thumb
+    {
+        width: 100%;
+        height: 115px;
+    }
 
 
-            .main
-            {
-                .review
-                {
-                    .data
-                    {
-                        align-content: flex-start;
-                        align-items: flex-start;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                    }
-                }
-            }
-        }
+    .reviews .row .main .review .data
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
 
@@ -303,18 +243,9 @@
     /*-------------
         What if
     -------------*/
-    .what_if
+    .what_if .accordion .accordion_item .text_block
     {
-        .accordion
-        {
-            .accordion_item
-            {
-                .text_block
-                {
-                    width: 100%;
-                }
-            }
-        }
+        width: 100%;
     }
 
 
@@ -322,69 +253,57 @@
     /*------------------
         Action block
     ------------------*/
-    .action_block
+    .action_block .tab_content.active
     {
-        .tab_content
-        {
-            &.active
-            {
-                padding: var(--inner_gap);
-            }
-        }
+        padding: var(--inner_gap);
+    }
 
 
-        .data
-        {
-            .form
-            {
-                .line
-                {
-                    width: 100%;
-                }
+    .action_block .data .form .line
+    {
+        width: 100%;
+    }
 
 
-                .submit
-                {
-                    width: 100%;
-                }
+    .action_block .data .form .submit
+    {
+        width: 100%;
+    }
 
 
-                .checkbox
-                {
-                    margin-top: var(--inner_gap_s);
-                    padding-top: 0;
-                }
-            }
-        }
+    .action_block .data .form .checkbox
+    {
+        margin-top: var(--inner_gap_s);
+        padding-top: 0;
+    }
 
 
-        .no
-        {
-            flex-wrap: wrap;
+    .action_block .no
+    {
+        flex-wrap: wrap;
 
-            gap: var(--inner_gap);
-
-
-            .title
-            {
-                width: 100%;
-
-                text-align: center;
+        gap: var(--inner_gap);
+    }
 
 
-                br
-                {
-                    display: none;
-                }
-            }
+    .action_block .no .title
+    {
+        width: 100%;
+
+        text-align: center;
+    }
 
 
-            .btn
-            {
-                width: 100%;
-                padding-inline: var(--inner_gap_xs);
-            }
-        }
+    .action_block .no .title br
+    {
+        display: none;
+    }
+
+
+    .action_block .no .btn
+    {
+        width: 100%;
+        padding-inline: var(--inner_gap_xs);
     }
 
 
@@ -397,12 +316,12 @@
         flex-wrap: wrap;
 
         gap: var(--inner_gap_xs);
+    }
 
 
-        .btn
-        {
-            width: 100%;
-        }
+    .cookies .btn
+    {
+        width: 100%;
     }
 
 
@@ -410,26 +329,23 @@
     /*------------
         Footer
     ------------*/
-    footer
+    footer .cont
     {
-        .cont
-        {
-            padding-right: var(--cont_padding);
-        }
+        padding-right: var(--cont_padding);
+    }
 
 
-        .cont + .cont
-        {
-            padding-right: 128px;
-        }
+    footer .cont + .cont
+    {
+        padding-right: 128px;
+    }
 
 
-        .img
-        {
-            right: -54px;
+    footer .img
+    {
+        right: -54px;
 
-            width: 189px;
-        }
+        width: 189px;
     }
 
 
@@ -440,62 +356,56 @@
     .modal
     {
         --modal_width: 335px;
-
-
-        .modal_title,
-        .modal_desc,
-        .form
-        {
-            width: 100%;
-        }
-
-
-        .image
-        {
-            display: none;
-        }
     }
 
 
-    #privacy_policy_modal
+    .modal .modal_title,
+    .modal .modal_desc,
+    .modal .form
     {
-        .modal_title
-        {
-            font-size: var(--font_size_title_s);
-        }
+        width: 100%;
+    }
+
+
+    .modal .image
+    {
+        display: none;
+    }
+
+
+    #privacy_policy_modal .modal_title
+    {
+        font-size: var(--font_size_title_s);
     }
 
 
     #calc_modal
     {
         padding-inline: var(--block_padding_s);
+    }
 
 
-        .modal_desc
-        {
-            width: 100%;
-        }
+    #calc_modal .modal_desc
+    {
+        width: 100%;
+    }
 
 
-        .calc
-        {
-            .data
-            {
-                min-height: 0;
-                padding-bottom: 0;
+    #calc_modal .calc .data
+    {
+        min-height: 0;
+        padding-bottom: 0;
+    }
 
 
-                .result
-                {
-                    position: relative;
-                    top: 0;
+    #calc_modal .calc .data .result
+    {
+        position: relative;
+        top: 0;
 
-                    width: 292px;
-                    height: 568px;
-                    margin-top: var(--block_padding_l);
-                    padding-block: 60px 40px;
-                }
-            }
-        }
+        width: 292px;
+        height: 568px;
+        margin-top: var(--block_padding_l);
+        padding-block: 60px 40px;
     }
 }
