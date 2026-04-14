@@ -1,0 +1,767 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_l: 14px;
+        --font_size: 14px;
+        --font_size_s: 12px;
+        --font_size_title_l: 34px;
+        --font_size_title: 30px;
+        --font_size_title_s: 26px;
+        --font_size_title_xs: 20px;
+        --block_head_offset: 40px;
+        --block_padding_xl: 36px;
+        --block_padding_l: 28px;
+        --block_padding: 24px;
+        --block_padding_s: 20px;
+        --outside_gap: 80px;
+        --border_radius: 12px;
+        --border_radius_s: 6px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        .head
+        {
+            .icon
+            {
+                width: 40px;
+            }
+        }
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        .logo
+        {
+            span
+            {
+                display: none;
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        gap: var(--inner_gap_s);
+
+
+        &.row
+        {
+            gap: var(--inner_gap_s);
+
+
+            .col
+            {
+                width: 100%;
+                max-width: 100%;
+
+                gap: var(--inner_gap_s);
+            }
+
+
+            .title
+            {
+                width: 100%;
+                max-width: 100%;
+            }
+
+
+            .desc
+            {
+                width: 100%;
+
+
+                &.l_w
+                {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding-top: var(--block_padding_xl);
+
+
+        .cont
+        {
+            gap: var(--block_padding_xl);
+        }
+
+
+        .data
+        {
+            width: 100%;
+
+
+            .title
+            {
+                margin-bottom: var(--block_padding);
+            }
+
+
+            .btns
+            {
+                .btn
+                {
+                    height: 36px;
+                }
+            }
+        }
+
+
+        .person
+        {
+            align-content: flex-start;
+            align-items: flex-start;
+
+            width: 100%;
+            padding-block: var(--block_padding_l);
+            padding-inline: var(--block_padding_l);
+
+
+            .items
+            {
+                display: none;
+            }
+
+
+            .info
+            {
+                width: 100%;
+                margin-right: 0;
+            }
+
+
+            .photo
+            {
+                right: calc(var(--inner_gap_s) * -1);
+
+                height: 280px;
+            }
+        }
+
+
+        .mob_person_items
+        {
+            display: block;
+        }
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc
+    {
+        .cont
+        {
+            min-height: 760px;
+        }
+
+
+        .data
+        {
+            padding-block: var(--block_padding_l);
+            padding-inline: var(--block_padding_l);
+
+
+            .info
+            {
+                width: 330px;
+                max-width: 100%;
+
+                gap: var(--inner_gap_xl);
+
+
+                .line
+                {
+                    gap: var(--inner_gap_xs);
+                }
+
+
+                .vals
+                {
+                    label
+                    {
+                        span
+                        {
+                            padding-inline: var(--inner_gap_s);
+                        }
+                    }
+                }
+            }
+
+
+            .result
+            {
+                top: -44px;
+
+                width: 330px;
+                height: 674px;
+                padding-block: 96px;
+                padding-inline: 36px;
+
+                transform: none;
+
+                background: url(../images/bg_calc_result_mob.png) 0 0/ 100% 100% no-repeat;
+
+                gap: var(--inner_gap_s);
+
+
+                .logo
+                {
+                    display: block;
+                }
+
+
+                .prices
+                {
+                    flex-direction: column;
+
+                    gap: var(--inner_gap_s);
+
+
+                    > *
+                    {
+                        gap: var(--inner_gap_xxxs);
+                    }
+                }
+
+
+                .btn
+                {
+                    height: 36px;
+                    margin-top: var(--inner_gap_xxs);
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history
+    {
+        .chart
+        {
+            width: 100%;
+            height: 300px;
+        }
+
+
+        .info
+        {
+            width: 100%;
+
+            gap: var(--inner_gap);
+
+
+            .service
+            {
+                padding: var(--inner_gap_s);
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Situations
+    ----------------*/
+    .situations
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap);
+            --gap_y: var(--inner_gap);
+            --items_per_line: 1;
+        }
+
+
+        .col
+        {
+            gap: var(--inner_gap);
+        }
+
+
+        .item
+        {
+            .image
+            {
+                width: 300px;
+            }
+
+
+            .info
+            {
+                width: calc(100% - 300px - var(--inner_gap));
+            }
+
+
+            .btn
+            {
+                height: 36px;
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        .message
+        {
+            width: 100%;
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 1;
+            --gap_x: var(--zero_px);
+            --gap_y: 40px;
+        }
+
+
+        .item
+        {
+            min-height: 294px;
+            padding: var(--inner_gap_l);
+
+
+            .arrow
+            {
+                top: -2px;
+                right: 0;
+                bottom: auto;
+                left: 0;
+
+                margin-inline: auto;
+
+                transform: rotate(90deg) translatex(-100%);
+            }
+        }
+    }
+
+
+
+    /*---------------------
+        After departure
+    ---------------------*/
+    .after_departure
+    {
+        .cont
+        {
+            gap: 0;
+        }
+
+
+        .block_head
+        {
+            width: 100%;
+            margin-bottom: var(--block_head_offset);
+
+            gap: var(--inner_gap_s);
+        }
+
+
+        .data
+        {
+            width: 100%;
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 1;
+            --gap_x: var(--inner_gap_s);
+            --gap_y: var(--inner_gap_s);
+        }
+
+
+        .item
+        {
+            min-height: 127px;
+
+
+            .thumb
+            {
+                top: auto;
+                right: var(--inner_gap_xs);
+                bottom: 0;
+                left: auto;
+
+                width: auto;
+                height: 160%;
+            }
+        }
+    }
+
+
+
+    /*-----------------------
+        Try simpler first
+    -----------------------*/
+    .try_simpler_first
+    {
+        .list
+        {
+            width: 100%;
+
+
+            .item
+            {
+                .name,
+                .desc
+                {
+                    width: 100%;
+                }
+            }
+        }
+
+
+
+        .action
+        {
+            overflow: visible;
+
+            width: 100%;
+            min-height: 238px;
+            padding: var(--inner_gap_l);
+
+
+            .title
+            {
+                width: 422px;
+                max-width: 100%;
+            }
+
+
+            .desc
+            {
+                width: 224px;
+            }
+
+
+            .btn
+            {
+                height: 36px;
+            }
+
+
+            .photo
+            {
+                width: 305px;
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Before/After
+    ------------------*/
+    .before_after
+    {
+        .images
+        {
+            height: 330px;
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 1;
+        }
+
+
+        .item
+        {
+            .items
+            {
+                > *
+                {
+                    padding-block: 6px;
+                    padding-inline: var(--inner_gap_xs);
+                }
+            }
+        }
+    }
+
+
+
+    /*--------------
+        Rreviews
+    --------------*/
+    .reviews
+    {
+        .row
+        {
+            .main
+            {
+                width: 100%;
+            }
+
+
+            .list
+            {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    /*-------------
+        What if
+    -------------*/
+    .what_if
+    {
+        .images
+        {
+            display: none;
+        }
+
+
+        .accordion
+        {
+            width: 100%;
+
+
+            .accordion_item
+            {
+                .image
+                {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        .tab_content
+        {
+            gap: var(--inner_gap_xl);
+        }
+
+
+        .message
+        {
+            width: 100%;
+        }
+
+
+        .data
+        {
+            width: 100%;
+
+
+            .form
+            {
+                --form_input_height: 36px;
+
+                .line
+                {
+                    width: calc((100% - 180px - var(--inner_gap_s) * 2) / 2);
+                }
+
+
+                .submit
+                {
+                    width: 180px;
+                }
+            }
+        }
+
+
+        .no
+        {
+            .btn
+            {
+                height: 36px;
+            }
+        }
+
+
+        .image
+        {
+            display: none;
+        }
+    }
+
+
+
+    /*-------------
+        Cookies
+    -------------*/
+    .cookies
+    {
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        max-width: 100%;
+        padding: var(--inner_gap);
+
+        transform: none;
+
+        border-radius: 0;
+
+        gap: var(--inner_gap);
+
+
+        .info
+        {
+            gap: var(--inner_gap_xs);
+        }
+
+
+        .btn
+        {
+            height: 36px;
+        }
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        position: relative;
+
+
+        .cont
+        {
+            position: relative;
+
+            padding-right: calc(260px + var(--cont_padding));
+
+            z-index: 3;
+        }
+
+
+        .logo
+        {
+            align-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            width: 100%;
+            margin-bottom: var(--inner_gap_s);
+
+            gap: var(--inner_gap);
+
+
+            img
+            {
+                width: 186px;
+                height: 75px;
+            }
+
+
+            br
+            {
+                display: none;
+            }
+        }
+
+
+        .callback_btn
+        {
+            height: 36px;
+        }
+
+
+        .phone
+        {
+            margin-right: auto;
+        }
+
+
+        .text
+        {
+            width: 100%;
+            margin-bottom: var(--inner_gap_l);
+        }
+
+
+        .img
+        {
+            display: block;
+        }
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #calc_modal
+    {
+        .modal_desc
+        {
+            width: 304px;
+        }
+
+
+        .calc
+        {
+            .data
+            {
+                min-height: 476px;
+
+
+                .result
+                {
+                    top: auto;
+                    bottom: 0;
+
+                    width: 300px;
+                    height: 560px;
+                    padding-block: 48px;
+                }
+            }
+        }
+    }
+}

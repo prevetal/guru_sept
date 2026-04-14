@@ -1,0 +1,804 @@
+@media print,
+(max-width: 1599px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_l: 14px;
+        --font_size: 13px;
+        --font_size_s: 12px;
+        --font_size_title_l: 46px;
+        --font_size_title: 35px;
+        --font_size_title_s: 27px;
+        --font_size_title_xs: 22px;
+        --block_head_offset: 50px;
+        --block_padding_xl: 50px;
+        --block_padding_l: 40px;
+        --block_padding_s: 26px;
+        --outside_gap: 110px;
+        --border_radius: 16px;
+        --border_radius_s: 8px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        .head
+        {
+            .title
+            {
+                width: calc(100% - 48px - var(--inner_gap));
+            }
+
+
+            .icon
+            {
+                width: 48px;
+
+
+                svg
+                {
+                    width: 18px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: var(--inner_gap_xl);
+
+
+        .btn
+        {
+            height: 30px;
+        }
+
+
+        .sep
+        {
+            height: 16px;
+        }
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        &.row
+        {
+            .col
+            {
+                width: auto;
+                max-width: calc(100% - 274px - var(--cont_padding_double));
+
+                gap: var(--inner_gap);
+            }
+
+
+            .title
+            {
+                width: auto;
+                max-width: calc(100% - 382px - var(--cont_padding_double));
+
+
+                .s_w
+                {
+                    max-width: calc(100% - 436px - var(--cont_padding_double));
+                }
+            }
+
+
+            .desc
+            {
+                width: 382px;
+
+
+                &.l_w
+                {
+                    width: 436px;
+                }
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_input_height: 38px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        .message
+        {
+            padding-block: var(--inner_gap_s) calc(var(--inner_gap_s) - 2px);
+            padding-inline: var(--inner_gap_s);
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        .cont
+        {
+            gap: var(--inner_gap_l);
+        }
+
+
+        .data
+        {
+            width: calc(50% - var(--inner_gap_l) / 2);
+
+
+            .items
+            {
+                gap: var(--inner_gap_s);
+            }
+
+
+            .btns
+            {
+                gap: var(--inner_gap);
+
+
+                .btn
+                {
+                    height: 38px;
+                }
+            }
+        }
+
+
+        .person
+        {
+            width: calc(50% - var(--inner_gap_l) / 2);
+
+            gap: 30px;
+
+
+            .photo
+            {
+                right: 272px;
+            }
+
+
+            .items
+            {
+                width: 216px;
+
+                gap: var(--inner_gap);
+
+
+                .item
+                {
+                    min-height: 102px;
+                }
+            }
+
+
+            .info
+            {
+                width: 223px;
+                margin-right: -7px;
+            }
+        }
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc
+    {
+        .data
+        {
+            .info
+            {
+                gap: 32px;
+
+
+                .line
+                {
+                    gap: var(--inner_gap_s);
+                }
+
+
+                .vals
+                {
+                    gap: var(--inner_gap_xs);
+
+
+                    label
+                    {
+                        span
+                        {
+                            padding-inline: var(--inner_gap_xs);
+                        }
+                    }
+                }
+            }
+
+
+            .result
+            {
+                width: 735px;
+                height: 352px;
+                padding-right: 90px;
+
+
+                .btn
+                {
+                    height: 38px;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history
+    {
+        .row
+        {
+            gap: var(--inner_gap_l);
+        }
+
+
+        .chart
+        {
+            width: calc(100% - 437px - var(--inner_gap_l));
+            height: 308px;
+        }
+
+
+        .info
+        {
+            width: 437px;
+
+            gap: var(--inner_gap);
+
+
+            .service
+            {
+                margin-top: 0;
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Situations
+    ----------------*/
+    .situations
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap_l);
+            --gap_y: var(--inner_gap_l);
+        }
+
+
+        .item
+        {
+            .row
+            {
+                gap: var(--inner_gap_l);
+            }
+
+
+            .bottom
+            {
+                margin-top: var(--inner_gap);
+
+                gap: var(--inner_gap);
+            }
+
+
+            .image
+            {
+                width: 300px;
+            }
+
+
+            .info
+            {
+                width: calc(100% - 300px - var(--inner_gap_l));
+
+                gap: var(--inner_gap_l);
+
+
+                .name
+                {
+                    font-size: var(--font_size_title_xs);
+                }
+            }
+
+
+            .btn
+            {
+                height: 38px;
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        .message
+        {
+            width: 274px;
+            padding: var(--inner_gap_s);
+        }
+
+
+        .grid_row
+        {
+            --gap_x: 58px;
+        }
+
+
+        .item
+        {
+            min-height: 392px;
+            padding: var(--inner_gap_xl);
+
+
+            .number
+            {
+                padding: var(--inner_gap_xl);
+
+                font-size: 52px;
+            }
+
+
+            .arrow
+            {
+                width: 28px;
+                height: 13px;
+                margin-right: var(--inner_gap_s);
+            }
+        }
+    }
+
+
+
+    /*---------------------
+        After departure
+    ---------------------*/
+    .after_departure
+    {
+        .cont
+        {
+            gap: var(--inner_gap_l);
+        }
+
+
+        .block_head
+        {
+            width: 246px;
+
+            gap: var(--block_padding_xl);
+
+
+            .btn
+            {
+                height: 38px;
+            }
+        }
+
+
+        .data
+        {
+            width: calc(100% - 246px - var(--inner_gap_l));
+        }
+
+
+        .grid_row
+        {
+            --gap_x: var(--inner_gap_l);
+            --gap_y: var(--inner_gap_l);
+        }
+
+
+        .item
+        {
+            min-height: 260px;
+
+            gap: var(--inner_gap_s);
+
+
+            .name
+            {
+                font-size: calc(var(--font_size_title_xs) - 2px);
+            }
+        }
+    }
+
+
+
+    /*-----------------------
+        Try simpler first
+    -----------------------*/
+    .try_simpler_first
+    {
+        .list
+        {
+            width: calc(100% - 318px - var(--block_padding));
+
+            gap: var(--inner_gap_xl);
+
+
+            .item
+            {
+                gap: var(--inner_gap);
+
+
+                .image
+                {
+                    height: 326px;
+                }
+
+
+                .info
+                {
+                    gap: var(--inner_gap);
+                }
+
+
+                .name
+                {
+                    width: 318px;
+                }
+
+
+                .desc
+                {
+                    width: calc(100% - 318px - var(--inner_gap_xs));
+                }
+            }
+        }
+
+
+        .action
+        {
+            width: 318px;
+            min-height: 450px;
+            padding: 35px;
+
+            gap: var(--inner_gap);
+
+
+            .desc
+            {
+                width: 164px;
+            }
+
+
+            .btn
+            {
+                height: 38px;
+            }
+
+
+            .photo
+            {
+                width: 204px;
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Before/After
+    ------------------*/
+    .before_after
+    {
+        .images
+        {
+            height: 405px;
+        }
+
+
+        .item
+        {
+            gap: var(--inner_gap);
+
+
+            .items
+            {
+                > *
+                {
+                    padding-inline: var(--inner_gap_xs);
+                }
+            }
+        }
+    }
+
+
+
+    /*--------------
+        Rreviews
+    --------------*/
+    .reviews
+    {
+        .row
+        {
+            gap: var(--inner_gap_l);
+
+
+            .main
+            {
+                width: calc(100% - 552px - var(--inner_gap_l));
+
+
+                .review
+                {
+                    padding-bottom: var(--inner_gap);
+
+                    gap: var(--inner_gap);
+                }
+            }
+
+
+            .list
+            {
+                width: 552px;
+
+                gap: var(--inner_gap_l);
+            }
+
+
+            .review
+            {
+                gap: var(--inner_gap);
+
+
+                .data
+                {
+                    width: calc(100% - 180px - var(--inner_gap));
+
+                    gap: var(--inner_gap);
+                }
+
+
+                .play
+                {
+                    width: 42px;
+
+
+                    .icon
+                    {
+                        width: 16px;
+                    }
+                }
+
+
+                .name
+                {
+                    width: calc(100% - 42px - var(--inner_gap_s));
+
+                    font-size: 18px;
+                }
+
+
+                .info
+                {
+                    gap: var(--inner_gap);
+                }
+
+
+                .images
+                {
+                    .thumb
+                    {
+                        height: 339px;
+                    }
+                }
+
+
+                .thumb
+                {
+                    width: 180px;
+                    height: 77px;
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------
+        What if
+    -------------*/
+    .what_if
+    {
+        .row
+        {
+            gap: var(--inner_gap_l);
+        }
+
+
+        .images
+        {
+            width: 433px;
+        }
+
+
+        .accordion
+        {
+            width: calc(100% - 433px - var(--inner_gap_l));
+
+
+            .accordion_item
+            {
+                .head
+                {
+                    padding-block: var(--inner_gap_xs);
+                }
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        .tab_content
+        {
+            gap: var(--block_padding_s);
+        }
+
+
+        .message
+        {
+            width: 488px;
+
+            gap: var(--inner_gap_l);
+        }
+
+
+        .data
+        {
+            width: calc(100% - 488px - var(--block_padding_s));
+
+            gap: var(--inner_gap_s);
+
+
+            .form
+            {
+                margin-top: var(--inner_gap_xxs);
+
+                column-gap: var(--inner_gap_l);
+
+
+                .line
+                {
+                    width: calc((100% - 180px - var(--inner_gap_l) * 2) / 2);
+                }
+
+
+                .submit
+                {
+                    width: 180px;
+                }
+            }
+        }
+
+
+        .no
+        {
+            .btn
+            {
+                height: 38px;
+            }
+        }
+
+
+        .image
+        {
+            top: -32px;
+            right: 43px;
+
+            width: 216px;
+            margin-right: 0;
+        }
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: var(--inner_gap_l);
+
+
+        .cont + .cont
+        {
+            margin-top: var(--inner_gap_l);
+        }
+
+
+        .logo
+        {
+            gap: var(--inner_gap);
+
+
+            img
+            {
+                width: 155px;
+                height: 62px;
+            }
+        }
+
+
+        .text
+        {
+            width: 782px;
+        }
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #calc_modal
+    {
+        .calc
+        {
+            .data
+            {
+                .result
+                {
+                    width: 732px;
+                    height: 340px;
+                }
+            }
+        }
+    }
+}

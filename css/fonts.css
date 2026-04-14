@@ -1,0 +1,40 @@
+/*-----------
+    Fonts
+-----------*/
+@font-face
+{
+    font-family: 'LT Superior';
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/ltsuperior-regular.woff2') format('woff2'),
+    url('../fonts/ltsuperior-regular.woff') format('woff'),
+    url('../fonts/ltsuperior-regular.ttf') format('truetype');
+}
+
+
+@font-face
+{
+    font-family: 'LT Superior';
+    font-weight: 600;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/ltsuperior-semibold.woff2') format('woff2'),
+    url('../fonts/ltsuperior-semibold.woff') format('woff'),
+    url('../fonts/ltsuperior-semibold.ttf') format('truetype');
+}
+
+
+@font-face
+{
+    font-family: 'LT Superior';
+    font-weight: 700;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/ltsuperior-bold.woff2') format('woff2'),
+    url('../fonts/ltsuperior-bold.woff') format('woff'),
+    url('../fonts/ltsuperior-bold.ttf') format('truetype');
+}
