@@ -337,16 +337,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function calc(context) {
-	const price = parseInt(context.find('.price_input').val().replace(/\D/g, ''), 10),
-		inSpring = context.find('.in_spring_input:checked').val(),
-		howOften = context.find('.how_often:checked').val()
+	const price = parseInt((context.find('.price_input').val() || '').replace(/\D/g, ''), 10) || 0
 
-	var normalWeeks = 48,
+	const inSpring = context.find('.in_spring_input:checked').val()
+
+	let normalWeeks = parseInt(context.find('.how_often:checked').val(), 10) || 0,
 		increasedWeeks = 0
 
 	if (inSpring === 'flooding') {
-		normalWeeks = 36,
-		increasedWeeks = 12
+		increasedWeeks = Math.round(normalWeeks * 0.25)
 	}
 
 	const result = Math.round(
