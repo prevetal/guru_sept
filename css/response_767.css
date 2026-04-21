@@ -217,20 +217,26 @@
     /*--------------
         Reviews
     --------------*/
-    .reviews .row .review .data
+    .reviews .review .data
     {
         width: 100%;
     }
 
 
-    .reviews .row .review .thumb
+    .reviews .review .thumb
     {
         width: 100%;
         height: 115px;
     }
 
 
-    .reviews .row .main .review .data
+    .reviews .review .info > *
+    {
+        width: 100%;
+    }
+
+
+    .reviews .big .review .data
     {
         align-content: flex-start;
         align-items: flex-start;

@@ -514,13 +514,13 @@
     }
 
 
-    .reviews .row .main
+    .reviews .big
     {
         width: calc(100% - 552px - var(--inner_gap_l));
     }
 
 
-    .reviews .row .main .review
+    .reviews .big .review
     {
         padding-bottom: var(--inner_gap);
 
@@ -528,7 +528,7 @@
     }
 
 
-    .reviews .row .list
+    .reviews .list
     {
         width: 552px;
 
@@ -536,13 +536,13 @@
     }
 
 
-    .reviews .row .review
+    .reviews .review
     {
         gap: var(--inner_gap);
     }
 
 
-    .reviews .row .review .data
+    .reviews .review .data
     {
         width: calc(100% - 180px - var(--inner_gap));
 
@@ -550,19 +550,19 @@
     }
 
 
-    .reviews .row .review .play
+    .reviews .review .play
     {
         width: 42px;
     }
 
 
-    .reviews .row .review .play .icon
+    .reviews .review .play .icon
     {
         width: 16px;
     }
 
 
-    .reviews .row .review .name
+    .reviews .review .name
     {
         width: calc(100% - 42px - var(--inner_gap_s));
 
@@ -570,19 +570,19 @@
     }
 
 
-    .reviews .row .review .info
+    .reviews .review .info
     {
         gap: var(--inner_gap);
     }
 
 
-    .reviews .row .review .images .thumb
+    .reviews .review .images .thumb
     {
         height: 339px;
     }
 
 
-    .reviews .row .review .thumb
+    .reviews .review .thumb
     {
         width: 180px;
         height: 77px;

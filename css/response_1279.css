@@ -144,7 +144,7 @@
     }
 
 
-    .block_head.row .title .s_w
+    .block_head.row .title.s_w
     {
         max-width: calc(100% - 328px - var(--inner_gap_l));
     }
@@ -560,13 +560,19 @@
     /*--------------
         Reviews
     --------------*/
-    .reviews .row .main
+    .reviews .big
     {
         width: calc(100% - 400px - var(--inner_gap));
     }
 
 
-    .reviews .row .list
+    .reviews .big .review .play + *
+    {
+        width: calc(100% - 30px - var(--inner_gap_xs));
+    }
+
+
+    .reviews .list
     {
         width: 400px;
 
@@ -574,7 +580,7 @@
     }
 
 
-    .reviews .row .review .data
+    .reviews .review .data
     {
         width: calc(100% - 130px - var(--inner_gap));
 
@@ -582,25 +588,31 @@
     }
 
 
-    .reviews .row .review .top
+    .reviews .review .top
     {
         gap: var(--inner_gap_xs);
     }
 
 
-    .reviews .row .review .play
+    .reviews .review .play
     {
         width: 30px;
     }
 
 
-    .reviews .row .review .play .icon
+    .reviews .review .play .icon
     {
         width: 12px;
     }
 
 
-    .reviews .row .review .name
+    .reviews .review .play .icon + .icon
+    {
+        width: 18px;
+    }
+
+
+    .reviews .review .name
     {
         width: calc(100% - 30px - var(--inner_gap_xs));
 
@@ -608,19 +620,19 @@
     }
 
 
-    .reviews .row .review .info
+    .reviews .review .info
     {
         gap: var(--inner_gap_xs);
     }
 
 
-    .reviews .row .review .info > *
+    .reviews .review .info > *
     {
         gap: var(--inner_gap_xxxs);
     }
 
 
-    .reviews .row .review .info .icon
+    .reviews .review .info .icon
     {
         width: 10px;
         min-width: 10px;
@@ -628,7 +640,7 @@
     }
 
 
-    .reviews .row .review .info .location .icon
+    .reviews .review .info .location .icon
     {
         width: 8px;
         min-width: 8px;
@@ -636,13 +648,13 @@
     }
 
 
-    .reviews .row .review .images .thumb
+    .reviews .review .images .thumb
     {
         height: 245px;
     }
 
 
-    .reviews .row .review .thumb
+    .reviews .review .thumb
     {
         width: 130px;
         height: 58px;

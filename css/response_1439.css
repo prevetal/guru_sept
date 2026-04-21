@@ -50,7 +50,7 @@
     }
 
 
-    .block_head.row .title .s_w
+    .block_head.row .title.s_w
     {
         max-width: calc(100% - 398px - var(--cont_padding_double));
     }
@@ -315,13 +315,19 @@
     }
 
 
-    .reviews .row .main
+    .reviews .big
     {
         width: calc(100% - 504px - var(--inner_gap));
     }
 
 
-    .reviews .row .list
+    .reviews .big .review .play + *
+    {
+        width: calc(100% - 38px - var(--inner_gap_s));
+    }
+
+
+    .reviews .list
     {
         width: 504px;
 
@@ -329,25 +335,25 @@
     }
 
 
-    .reviews .row .review .data
+    .reviews .review .data
     {
         width: calc(100% - 163px - var(--inner_gap));
     }
 
 
-    .reviews .row .review .play
+    .reviews .review .play
     {
         width: 38px;
     }
 
 
-    .reviews .row .review .play .icon
+    .reviews .review .play .icon
     {
         width: 14px;
     }
 
 
-    .reviews .row .review .name
+    .reviews .review .name
     {
         width: calc(100% - 38px - var(--inner_gap_s));
 
@@ -355,13 +361,13 @@
     }
 
 
-    .reviews .row .review .images .thumb
+    .reviews .review .images .thumb
     {
         height: 309px;
     }
 
 
-    .reviews .row .review .thumb
+    .reviews .review .thumb
     {
         width: 163px;
         height: 72px;

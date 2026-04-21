@@ -121,39 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
-	$('.audio_btn').click(function(e) {
-		e.preventDefault()
-
-		const audioSrc = $(this).data('audio')
-
-		$('#audio source').attr('src', audioSrc)
-		$('#audio')[0].load()
-
-		Fancybox.close()
-
-		Fancybox.show([
-			{
-				src: '#audio_modal',
-				type: 'inline'
-			}
-		], {
-			...fancyOptions,
-			on: {
-				...fancyOptions.on,
-
-				destroy: () => {
-					const audio = document.getElementById('audio')
-
-					if (audio) {
-						audio.pause()
-						audio.currentTime = 0
-					}
-				}
-			}
-		})
-	})
-
-
 	// Phone input mask
 	const phoneInputs = document.querySelectorAll('input[type=tel]')
 
@@ -331,6 +298,53 @@ document.addEventListener('DOMContentLoaded', function() {
 				}
 			}
 		}
+	})
+
+
+	// Review
+	$('.reviews .list .review').each(function () {
+		const $review = $(this),
+			$reviews = $review.closest('.reviews'),
+			$big = $reviews.find('.big')
+
+		$review.on('click', function (e) {
+			const index = $review.index(),
+        		clickedPlay = $(e.target).closest('.play').length > 0
+
+			const $current = $big.find('.review.show')
+			const currentAudio = $current.find('.audio')[0]
+			if (currentAudio) currentAudio.pause()
+
+			$big.find('.review').removeClass('show')
+			const $bigReview = $big.find('.review').eq(index)
+			$bigReview.addClass('show')
+
+			if (clickedPlay) {
+				const audio = $bigReview.find('.audio')[0]
+				if (audio) audio.play()
+			}
+
+			document.getElementById('reviews').scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			}, 1000)
+		})
+	})
+
+
+	$('.reviews .big .review').each(function () {
+		const $review = $(this),
+			$btn = $review.find('.play'),
+			$audio = $review.find('.audio')[0]
+
+		$btn.on('click', () => {
+			$audio.paused
+				? $audio.play()
+				: $audio.pause()
+		})
+
+		$($audio).on('play', () => $btn.addClass('active'))
+		$($audio).on('pause ended', () => $btn.removeClass('active'))
 	})
 })
 

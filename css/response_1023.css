@@ -6,9 +6,9 @@
     -------------------*/
     :root
     {
-        --font_size_l: 14px;
+        --font_size_l: 15px;
         --font_size: 14px;
-        --font_size_s: 12px;
+        --font_size_s: 13px;
         --font_size_title_l: 34px;
         --font_size_title: 30px;
         --font_size_title_s: 26px;
@@ -69,7 +69,8 @@
     }
 
 
-    .block_head.row .title
+    .block_head.row .title,
+    .block_head.row .title.s_w
     {
         width: 100%;
         max-width: 100%;
@@ -471,13 +472,13 @@
     /*--------------
         Reviews
     --------------*/
-    .reviews .row .main
+    .reviews .big
     {
         width: 100%;
     }
 
 
-    .reviews .row .list
+    .reviews .list
     {
         width: 100%;
     }
