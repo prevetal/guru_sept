@@ -358,12 +358,13 @@
         width: calc(100% - 38px - var(--inner_gap_s));
 
         font-size: 16px;
+        line-height: 19px;
     }
 
 
     .reviews .review .images .thumb
     {
-        height: 309px;
+        height: 314px;
     }
 
 

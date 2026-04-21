@@ -567,6 +567,7 @@
         width: calc(100% - 42px - var(--inner_gap_s));
 
         font-size: 18px;
+        line-height: 21px;
     }
 
 
@@ -578,7 +579,7 @@
 
     .reviews .review .images .thumb
     {
-        height: 339px;
+        height: 344px;
     }
 
 

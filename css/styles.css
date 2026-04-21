@@ -2637,7 +2637,7 @@ header .callback_btn:hover
     width: 660px;
     max-width: 100%;
 
-    gap: var(--inner_gap_xs);
+    gap: var(--inner_gap_xl);
 }
 
 
@@ -2743,7 +2743,7 @@ header .callback_btn:hover
     width: calc(100% - 50px - var(--inner_gap_s));
 
     font-size: 22px;
-    line-height: 120%;
+    line-height: 25px;
 }
 
 
@@ -2839,7 +2839,7 @@ header .callback_btn:hover
 .reviews .review .images .thumb
 {
     width: 100%;
-    height: 406px;
+    height: 387px;
 
     border-radius: 0;
 }
@@ -2853,6 +2853,12 @@ header .callback_btn:hover
     height: 94px;
 
     border-radius: var(--border_radius_s);
+}
+
+
+.reviews .review.active
+{
+    display: none;
 }
 
 

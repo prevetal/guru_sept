@@ -230,6 +230,12 @@
     }
 
 
+    .reviews .review .images .thumb
+    {
+        height: 230px;
+    }
+
+
     .reviews .review .info > *
     {
         width: 100%;

@@ -484,6 +484,12 @@
     }
 
 
+    .reviews .review .images .thumb
+    {
+        height: 280px;
+    }
+
+
 
     /*-------------
         What if

@@ -305,7 +305,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	$('.reviews .list .review').each(function () {
 		const $review = $(this),
 			$reviews = $review.closest('.reviews'),
-			$big = $reviews.find('.big')
+			$big = $reviews.find('.big'),
+			$list = $reviews.find('.list')
 
 		$review.on('click', function (e) {
 			const index = $review.index(),
@@ -314,6 +315,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			const $current = $big.find('.review.show')
 			const currentAudio = $current.find('.audio')[0]
 			if (currentAudio) currentAudio.pause()
+
+			$list.find('.review').removeClass('active')
+        	$review.addClass('active')
 
 			$big.find('.review').removeClass('show')
 			const $bigReview = $big.find('.review').eq(index)
