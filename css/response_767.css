@@ -90,12 +90,13 @@
     ----------*/
     .calc .cont
     {
-        min-height: 1260px;
+        min-height: 0;
     }
 
 
     .calc .data
     {
+        margin-bottom: 500px;
         padding-block: var(--inner_gap_l) 112px;
         padding-inline: var(--inner_gap_s);
     }
