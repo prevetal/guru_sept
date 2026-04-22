@@ -362,6 +362,12 @@
     }
 
 
+    footer .phone
+    {
+        margin-left: var(--inner_gap_s);
+    }
+
+
 
     /*-----------
         PopUp
